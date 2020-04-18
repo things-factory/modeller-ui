@@ -24,7 +24,8 @@ const INITIAL_STATE = {
     range: 'property-editor-value-range',
     'attachment-selector': 'property-editor-attachment-selector',
     'gltf-selector': 'property-editor-attachment-selector',
-    'image-selector': 'property-editor-image-selector'
+    'image-selector': 'property-editor-image-selector',
+    'font-selector': 'property-editor-font-selector'
   }
 }
 

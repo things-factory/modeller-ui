@@ -16,6 +16,7 @@ import './things-editor-table'
 import './things-editor-value-map'
 import './things-editor-value-range'
 import './things-editor-attachment-selector'
+import './things-editor-font-selector'
 
 import { ThingsEditorPropertyStyles } from './things-editor-property-styles'
 
@@ -539,3 +540,21 @@ class PropertyEditorImageSelector extends ThingsEditorProperty {
 }
 
 customElements.define('property-editor-image-selector', PropertyEditorImageSelector)
+
+class PropertyEditorFontSelector extends ThingsEditorProperty {
+  static get styles() {
+    return [ThingsEditorPropertyStyles]
+  }
+
+  editorTemplate(props) {
+    return html`
+      <things-editor-font-selector
+        id="editor"
+        .value=${props.value}
+        .properties=${props.property}
+      ></things-editor-font-selector>
+    `
+  }
+}
+
+customElements.define('property-editor-font-selector', PropertyEditorFontSelector)
