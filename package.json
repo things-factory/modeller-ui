@@ -1,11 +1,11 @@
 {
   "name": "@things-factory/modeller-ui",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "main": "dist-server/index.js",
   "browser": "client/index.js",
   "things-factory": true,
   "license": "MIT",
-  "author": "heartyoh&#39;",
+  "author": "heartyoh",
   "scripts": {
     "serve": "things-factory modeller-ui",
     "serve:dev": "npm run build:server && things-factory-dev modeller-ui",
@@ -30,8 +30,28 @@
     "stop": "things-factory-stop modeller-ui"
   },
   "dependencies": {
-    "@things-factory/layout-base": "*",
-    "@things-factory/shell": "*"
+    "@material/mwc-icon": "^0.14.1",
+    "@polymer/iron-flex-layout": "^3.0.1",
+    "@polymer/iron-form-element-behavior": "^3.0.1",
+    "@polymer/iron-resizable-behavior": "^3.0.1",
+    "@polymer/neon-animation": "^3.0.1",
+    "@polymer/paper-button": "^3.0.1",
+    "@polymer/paper-dialog": "^3.0.1",
+    "@polymer/paper-dropdown-menu": "^3.1.0",
+    "@polymer/paper-input": "^3.2.1",
+    "@polymer/paper-item": "^3.0.1",
+    "@polymer/paper-listbox": "^3.0.1",
+    "@polymer/paper-radio-button": "^3.0.1",
+    "@polymer/paper-ripple": "^3.0.2",
+    "@polymer/paper-slider": "^3.0.1",
+    "@polymer/polymer": "^3.3.1",
+    "@things-factory/i18n-base": "^2.0.0",
+    "@things-factory/shell": "*",
+    "@things-factory/utils": "^0.0.7",
+    "ace-builds": "^1.4.11",
+    "brace": "^0.11.1",
+    "codemirror": "^5.52.2",
+    "tinycolor2": "^1.4.1"
   },
   "devDependencies": {}
 }
