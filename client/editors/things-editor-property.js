@@ -15,6 +15,7 @@ import './things-editor-options'
 import './things-editor-table'
 import './things-editor-value-map'
 import './things-editor-value-range'
+import './things-editor-attachment-selector'
 
 import { ThingsEditorPropertyStyles } from './things-editor-property-styles'
 
@@ -502,3 +503,39 @@ class PropertyEditorValueRange extends ThingsEditorProperty {
 }
 
 customElements.define('property-editor-value-range', PropertyEditorValueRange)
+
+class PropertyEditorAttachmentSelector extends ThingsEditorProperty {
+  static get styles() {
+    return [ThingsEditorPropertyStyles]
+  }
+
+  editorTemplate(props) {
+    return html`
+      <things-editor-attachment-selector
+        id="editor"
+        .value=${props.value}
+        .properties=${props.property}
+      ></things-editor-attachment-selector>
+    `
+  }
+}
+
+customElements.define('property-editor-attachment-selector', PropertyEditorAttachmentSelector)
+
+class PropertyEditorImageSelector extends ThingsEditorProperty {
+  static get styles() {
+    return [ThingsEditorPropertyStyles]
+  }
+
+  editorTemplate(props) {
+    return html`
+      <things-editor-attachment-selector
+        id="editor"
+        .value=${props.value}
+        .properties=${Object.assign({ category: 'image' }, props)}
+      ></things-editor-attachment-selector>
+    `
+  }
+}
+
+customElements.define('property-editor-image-selector', PropertyEditorImageSelector)
