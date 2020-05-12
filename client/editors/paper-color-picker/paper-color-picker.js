@@ -70,6 +70,7 @@ Polymer({
       }
 
       #detail {
+        background-color:#fff;
         min-width: 240px;
         margin: 0px;
         padding: 0px;
