@@ -13,7 +13,7 @@ export const ThingsEditorPropertyStyles = css`
     color: var(--property-sidebar-fieldset-legend-color);
   }
 
-  * {
+  :host > * {
     box-sizing: border-box;
 
     grid-column: span 7;
@@ -22,7 +22,7 @@ export const ThingsEditorPropertyStyles = css`
     align-self: stretch;
   }
 
-  label {
+  :host > label {
     grid-column: span 3;
     order: 1;
 
@@ -35,18 +35,18 @@ export const ThingsEditorPropertyStyles = css`
     align-self: center;
   }
 
-  input[type='checkbox'] ~ label {
+  :host > input[type='checkbox'] ~ label {
     grid-column: span 6;
     order: 2;
 
     text-align: left;
   }
 
-  select {
+  :host > select {
     border-color: lightgray;
   }
 
-  legend {
+  :host > legend {
     grid-column: 1 / -1;
 
     display: inline-block;
@@ -55,11 +55,11 @@ export const ThingsEditorPropertyStyles = css`
     text-transform: capitalize;
   }
 
-  [fullwidth] {
+  :host > [fullwidth] {
     grid-column: 1 / -1;
   }
 
-  input[type='checkbox'] {
+  :host > input[type='checkbox'] {
     grid-column: span 4;
     order: 1;
 
